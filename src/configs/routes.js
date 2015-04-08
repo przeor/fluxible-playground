@@ -16,5 +16,12 @@ module.exports = {
         page: 'about',
         title: 'About',
         action: loadPage
+    },
+    login: {
+        path: '/login',
+        method: 'get',
+        page: 'login',
+        title: 'Login',
+        action: loadPage
     }
 };

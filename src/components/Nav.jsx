@@ -13,6 +13,8 @@ var Nav = React.createClass({
         var selected = this.props.selected;
         var links = this.props.links;
 
+        console.log(links);
+
         var linkHTML = Object.keys(links).map(function (name) {
             var className = '';
             var link = links[name];

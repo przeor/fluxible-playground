@@ -32,7 +32,7 @@ module.exports = function (grunt) {
                 resolve: {
                     extensions: ['', '.js', '.jsx']
                 },
-                entry: './client.js',
+                entry: './src/client.js',
                 output: {
                     path: './build/js',
                     publicPath: '/public/js/',
