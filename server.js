@@ -14,8 +14,8 @@ var serialize = require('serialize-javascript');
 var navigateAction = require('flux-router-component').navigateAction;
 var debug = require('debug')('example');
 var React = require('react');
-var app = require('./app');
-var htmlComponent = React.createFactory(require('./components/Html.jsx'));
+var app = require('./src/app');
+var htmlComponent = React.createFactory(require('./src/components/Html.jsx'));
 
 var server = express();
 server.set('state namespace', 'App');
@@ -54,6 +54,6 @@ server.use(function (req, res, next) {
     });
 });
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4000;
 server.listen(port);
 console.log('Listening on port ' + port);
